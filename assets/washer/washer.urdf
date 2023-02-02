@@ -1,0 +1,53 @@
+<robot name="Washer">
+    <link name="corpus">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/corpus.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/corpus.obj"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="door">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/door.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/door.obj"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="detergent_tray">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/detergent_tray.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/detergent_tray.obj"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="door_hinge" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="corpus"/>
+        <child link="door"/>
+        <axis xyz=".0 -1.0 0.0"/>
+        <limit lower="0.0" upper="2.5" effort="100.0" velocity="100.0"/>
+    </joint>
+    <joint name="detergent_tray_joint" type="prismatic">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="corpus"/>
+        <child link="detergent_tray"/>
+        <axis xyz=".0 0.0 1.0"/>
+        <limit lower="0.0" upper="0.03" effort="100.0" velocity="100.0"/>
+    </joint>
+</robot>

@@ -1,0 +1,54 @@
+<robot name="Window">
+    <link name="frame">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/frame.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/frame.obj"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="pane_0">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/pane_0.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/pane_0.obj"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="pane_1">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/pane_1.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/pane_1.obj"/>
+            </geometry>
+        </collision>
+    </link>
+
+
+    <joint name="window_pane_slider_0" type="prismatic">
+        <origin xyz="0.0 -0.021 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="frame"/>
+        <child link="pane_0"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit lower="-0.042" upper="0.0" effort="100.0" velocity="100.0"/>
+    </joint>
+    <joint name="window_pane_slider_1" type="prismatic">
+        <origin xyz="0.0 -0.03 -0.002" rpy="0.0 0.0 0.0"/>
+        <parent link="frame"/>
+        <child link="pane_1"/>
+        <axis xyz="0.0 1.0 0.0"/>
+        <limit lower="0.0" upper="0.042" effort="100.0" velocity="100.0"/>
+    </joint>
+</robot>

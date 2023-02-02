@@ -1,0 +1,76 @@
+<robot name="Dishwasher">
+    <link name="corpus">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/corpus.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/corpus.obj"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="door">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/door.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/door.obj"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="basket_0">
+        <visual>
+            <origin xyz="3.1 -0.05 4.0"/>
+            <geometry>
+                <mesh filename="meshes/basket.obj" scale="2.6"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="3.1 -0.05 4.0"/>
+            <geometry>
+                <mesh filename="meshes/basket.obj" scale="2.6"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="basket_1">
+        <visual>
+            <origin xyz="3.1 -0.05 1.0"/>
+            <geometry>
+                <mesh filename="meshes/basket.obj" scale="2.6"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="3.1 -0.05 1.0"/>
+            <geometry>
+                <mesh filename="meshes/basket.obj" scale="2.6"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="door_hinge" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="corpus"/>
+        <child link="door"/>
+        <axis xyz="0.0 -1.0 0.0"/>
+        <limit lower="0.0" upper="1.5707963267948966" effort="100.0" velocity="100.0"/>
+    </joint>
+    <joint name="basket_0_slider" type="prismatic">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="corpus"/>
+        <child link="basket_0"/>
+        <axis xyz="1.0 0.0 0.0"/>
+        <limit lower="-4.0" upper="0" effort="100.0" velocity="100.0"/>
+    </joint>
+    <joint name="basket_1_slider" type="prismatic">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="corpus"/>
+        <child link="basket_1"/>
+        <axis xyz="1.0 0.0 0.0"/>
+        <limit lower="-4.0" upper="0" effort="100.0" velocity="100.0"/>
+    </joint>
+</robot>

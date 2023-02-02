@@ -1,0 +1,39 @@
+<robot name="Cabinet">
+    <link name="corpus">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/corpus.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/corpus.obj"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="door">
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="0.0"/>
+            <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+        </inertial>
+        <visual>
+            <geometry>
+                <mesh filename="meshes/door.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/door.obj"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="door_hinge" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="corpus"/>
+        <child link="door"/>
+        <axis xyz="0.0 0.0 -1.0"/>
+        <limit lower="0.0" upper="2.0944" effort="100.0" velocity="100.0"/>
+    </joint>
+</robot>

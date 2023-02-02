@@ -1,0 +1,73 @@
+# Blender 3.4.1 MTL File: 'None'
+# www.blender.org
+
+newmtl black_plastic
+Ns 74.825188
+Ka 0.500000 0.500000 0.500000
+Kd 0.011000 0.011000 0.011000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl lambert1
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.500000 0.500000 0.500000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl metal
+Ns 287.272766
+Ka 0.538462 0.538462 0.538462
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/clemens/Downloads/sketchfab_kitchen_obj/coffeemachine/source/draft punk/images/TexturesCom_Metal_AluminumBrushed_1K_roughness.tif
+
+newmtl phong3
+Ns 200.000000
+Ka 0.500000 0.500000 0.500000
+Kd 0.500000 0.500000 0.500000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl sign
+Ns 20.000006
+Ka 0.500000 0.500000 0.500000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+illum 3
+map_Kd /home/clemens/Downloads/sketchfab_kitchen_obj/coffeemachine/source/draft punk/images/sign.png
+map_d /home/clemens/Downloads/sketchfab_kitchen_obj/coffeemachine/source/draft punk/images/sign.png
+
+newmtl transp_plastic
+Ns 200.000000
+Ka 0.500000 0.500000 0.500000
+Kd 0.418383 0.687000 0.687000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.012987
+illum 6
+
+newmtl white
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/clemens/Downloads/sketchfab_kitchen_obj/coffeemachine/source/draft punk/images/99019963-stock-vector-seamless-pattern-with-abstract-irregular-wavy-red-lines-on-orange-background-cracked-ground-or-blood.jpg
+map_Bump /home/clemens/Downloads/sketchfab_kitchen_obj/coffeemachine/source/draft punk/images/99019963-stock-vector-seamless-pattern-with-abstract-irregular-wavy-red-lines-on-orange-background-cracked-ground-or-blood.jpg

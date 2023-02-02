@@ -1,0 +1,34 @@
+<robot name="CoffeeMachine">
+    <link name="corpus">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/corpus.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/corpus.obj"/>
+            </geometry>
+        </collision>
+    </link>
+    <link name="portafilter">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/portafilter.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/portafilter.obj"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="portafilter_joint" type="revolute">
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="corpus"/>
+        <child link="portafilter"/>
+        <axis xyz="0.0 0.0 1.0"/>
+        <limit lower="-1.5" upper="1.5" effort="100.0" velocity="100.0"/>
+    </joint>
+</robot>
