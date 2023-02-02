@@ -1,0 +1,14 @@
+<robot name="Hood">
+    <link name="hood">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/hood.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/hood.obj"/>
+            </geometry>
+        </collision>
+    </link>
+</robot>

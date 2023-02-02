@@ -1,0 +1,14 @@
+<robot name="Plate">
+    <link name="plate">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/plate.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/plate.obj"/>
+            </geometry>
+        </collision>
+    </link>
+</robot>

@@ -1,0 +1,14 @@
+<robot name="Faucet">
+    <link name="faucet">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/faucet.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/faucet.obj"/>
+            </geometry>
+        </collision>
+    </link>
+</robot>

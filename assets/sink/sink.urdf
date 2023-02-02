@@ -1,0 +1,14 @@
+<robot name="Sink">
+    <link name="sink">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/sink.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/sink.obj"/>
+            </geometry>
+        </collision>
+    </link>
+</robot>

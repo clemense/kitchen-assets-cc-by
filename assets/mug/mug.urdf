@@ -1,0 +1,14 @@
+<robot name="Mug">
+    <link name="mug">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/mug.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/mug.obj"/>
+            </geometry>
+        </collision>
+    </link>
+</robot>

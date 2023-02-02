@@ -1,0 +1,14 @@
+<robot name="Chair">
+    <link name="chair">
+        <visual>
+            <geometry>
+                <mesh filename="meshes/chair.obj"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="meshes/chair.obj"/>
+            </geometry>
+        </collision>
+    </link>
+</robot>
